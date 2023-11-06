@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHEN | Portfolio</title>
+  <link rel="shortcut icon" href="assets/images/Omni.gif" type="gif">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet"></head>
+
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - //HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      
+      <h1 class="h1 logo">
+        <a href="#">
+          <span id="typing-text">Shen<span>.</span></span>
+        </a>
+      </h1>
+              
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+      
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="navbar-link">Skills</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+          <li>
+            <a href="Works/index2.html" class="navbar-link">Works</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 
+        - #Loading Screen
+      -->
+
+      <div id="home" class="loading-screen">
+        <h1 class="loading-text">Shen's Portfolio Now Loading</h1>
+        <img src="assets/images/Omni.gif" alt="Omni" class="loading-Gif">
+        <div class="loading-dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #BEN 10
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+          <picture>
+            <source srcset="assets/images/ShenLogo1.png" media="(min-width: 768px)">
+            <source srcset="assets/images/ShenLogo1.png" media="(min-width: 500px)">
+            <img src="assets/images/ShenLogo1.png" alt="Logo"
+              class="w-100">
+          </picture>
+        </figure>
+        
+        
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
+      </div>
+      
+      <svg id="filters">
+          <defs>
+              <filter id="threshold">
+                  <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 255 -140" />
+              </filter>
+          </defs>
+      </svg>
+        
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="https://www.facebook.com/Sheeeeeeeeeenn" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/shenmar-bonifacio-10660b1ba/" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/sheeeeeeeeeenn" class="hero-social-link">
+              <ion-icon name="logo-github"></ion-icon>
+              <div class="tooltip">Github</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/potatooosmashhh/" class="hero-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+              <div class="tooltip">Instagram</div>
+            </a>
+          </li>
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+      <!-- 
+        - #STATS
+      -->
+      
+      <section class="stats" id="stats" >
+        <ul class="stats-list" >
+
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+              <h2 class="h2 card-title">
+                3rd Year<strong>Bachelor of Science in Computer Science</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+              <h2 class="h2 card-title">
+                50+ <strong>Completed Projects such as Websites, Digital Arts. and Codes</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+              <h2 class="h2 card-title">
+                20+ <strong>Happy Clients</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about" >
+
+        <figure class="about-banner custom-img-class">
+          <img src="assets/images/Shen.png" alt="Picture of Shenmar Bonifacio" class="w-100 with-shadow" id="imageToSwap">
+        </figure>
+        
+        <div class="about-content section-content">
+          <p class="section-subtitle">About me</p>
+          <h2 class="h3 section-title"><strong>Shenmar Bonifacio</strong></h2>
+          <h2 class="h3 section-title"><strong>BSCS 3C</strong></h2>
+
+          <p class="section-text" style="text-align: justify; text-indent: 35px;">
+            I am currently in college under the degree of Bachelor of Science in Computer Science.
+            With all the foundations of knowledge and skills I have gained so far in my program, 
+            I am dedicated and motivated to seek for work towards personal and professional growth.
+            An aspiring computer scientist with a sharp understanding of digital and information technologies,
+            well-equipped to address technical inquiries with excellent customer support.
+          </p>
+          
+
+          <div class="btn-group">
+            <a href="assets/images/SHENMAR_CV.pdf" target="_blank">
+              <button type="button" class="custom-button">
+                <span class="button_lg">
+                  <span class="button_sl"></span>
+                  <span class="button_text">See my Resume</span>
+                </span>
+              </button>
+            </a>
+          </div>
+      </section>
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">My Programming Skills and Tools</h2>
+
+          <p class="section-text">
+            These are the skills and tools that I use to hone my works.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+          
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JAVA</div>
+                <div class="card-icon">
+                  <img src="assets/images/java.png" alt="Java logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C#</div>
+                <div class="card-icon">
+                  <img src="assets/images/c-sharp.png" alt="C# logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+                <div class="card-icon">
+                  <img src="assets/images/javascript.png" alt="JavaScript logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS</div>
+                <div class="card-icon">
+                  <img src="assets/images/css-3.png" alt="CSS logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">REACT</div>
+                <div class="card-icon">
+                  <img src="assets/images/react.png" alt="React logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML</div>
+                <div class="card-icon">
+                  <img src="assets/images/html.png" alt="HTML logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">C++</div>
+                <div class="card-icon">
+                  <img src="assets/images/c++.png" alt="C++ logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+          </ul>
+
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS CODE</div>
+                <div class="card-icon">
+                  <img src= "assets/images/visual-studio.png" alt="VS Code logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">NETBEANS</div>
+                <div class="card-icon">
+                  <img src="assets/images/Netbeans.png" alt="Netbeans logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ECLIPSE</div>
+                <div class="card-icon">
+                  <img src="assets/images/Eclipse.png" alt="Eclipse logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">DATABASE</div>
+                <div class="card-icon">
+                  <img src="assets/images/database-storage.png" alt="Database logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">FILMORA</div>
+                <div class="card-icon">
+                  <img src="assets/images/Filmora.png" alt="Filmora logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PHOTOSHOP</div>
+                <div class="card-icon">
+                  <img src="assets/images/adobe-photoshop.png" alt="Photoshop logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MS OFFICE</div>
+                <div class="card-icon">
+                  <img src="assets/images/ms office.png" alt="MS Office logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CANVA</div>
+                <div class="card-icon">
+                  <img src="assets/images/canva-icon.png" alt="Canva logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">ADOBE ILLUSTRATOR</div>
+                <div class="card-icon">
+                  <img src="assets/images/Ai.png" alt="Ai logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">BOOSTSRAP</div>
+                <div class="card-icon">
+                  <img src="assets/images/bootstrap.png" alt="Boostsrap logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">COMMAND PROMPT</div>
+                <div class="card-icon">
+                  <img src="assets/images/command.png" alt="CMD logo" class="zoom-icon">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+          <li>
+            <div class="project-content section-content">
+              <p class="section-subtitle">My Portfolio</p>
+              <h2 class="h3 section-title">See My Works.</h2>
+              <p class="section-text" style="text-align: justify; text-indent: 35px;">
+                Experienced in digital art commissions, coding, web-designing, and editing.
+              </p>
+            </div>
+          </li>
+        
+          <li>
+            <a href="Works/index2.html" class="project-card">
+              <figure class="card-banner">
+                <img src="assets/images/DA7.jpg" class="w-100" alt="Digital art 7">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">CLICK FOR MORE PORTFOLIO</h3>
+                <time class="publish-date" datetime="2023-01">Date Accomplished: 01/2023</time>
+              </div>
+            </a>
+          </li>
+        
+          <li>
+            <a href="Works/index2.html" class="project-card">
+              <figure class="card-banner">
+                <img src="assets/images/S5.png" class="w-100" alt="Church Design">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">CLICK FOR MORE PORTFOLIO</h3>
+                <time class="publish-date" datetime="2023-01">Date Accomplished: 09/2023</time>
+              </div>
+            </a>
+          </li>
+        
+          <li>
+            <a href="Works/index2.html" class="project-card">
+              <figure class="card-banner">
+                <img src="assets/images/Webhost.png" class="w-100" alt="Webhost">
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">CLICK FOR MORE PORTFOLIO</h3>
+                <time class="publish-date" datetime="2023-01">Date Accomplished: 12/2022</time>
+              </div>
+            </a>
+          </li>
+        </ul>
+        
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+          <h2 class="h3 section-title">For Inquiries</h2>
+          <p class="section-text" >
+            Leave a message and let me know how I can help. Fill out the form and I’ll be in touch as soon as possible.
+          </p>
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+                <address class="contact-info">
+                    Bagumbong, Caloocan City, Philippines.
+                  </a>
+                  <figure>
+                    <div class="map-container">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30865.743645534676!2d120.9970108663239!3d14.756747084064132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1c46ab566d9%3A0xd851de081610542f!2sBarangay%20171%2C%20Caloocan%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1699114750549!5m2!1sen!2sph"
+                        style="border: 3px solid transparent;
+                          border-image: linear-gradient(45deg, #FF5733, #FBD425, #FF5733) 2;
+                          border-image-slice: 1;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Map of Barangay 171, Caloocan, Metro Manila"
+                        geolocation="enabled">
+                      </iframe>
+                    </div>
+                  </figure>
+                </address>
+              </div>
+            </li>
+
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+                <div class="contact-info-container">
+                    <img src="assets/images/ph.jpg" alt="Philippine Flag" class="flag-image-small">
+                    <a href="tel:+639764129222" class="contact-info">(+63) 9764129222</a>
+                </div>
+            </div>            
+            </li>
+
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+                <a href="mailto:Shenmarbonifacio@gmail.com" class="contact-info">Shenmarbonifacio@gmail.com</a>
+            </div>
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+                <li>
+                  <a href="https://www.facebook.com/Sheeeeeeeeeenn" class="contact-social-link facebook">
+                    <div class="tooltip">Facebook</div>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/shenmar-bonifacio-10660b1ba/" class="contact-social-link linkedin">
+                    <div class="tooltip">Linkedin</div>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/sheeeeeeeeeenn" class="contact-social-link github">
+                    <div class="tooltip">Github</div>
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/potatooosmashhh/" class="contact-social-link instagram">
+                    <div class="tooltip">Instagram</div>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <form action="" class="contact-form" autocomplete="on">
+
+          <div class="form-wrapper">
+            <label for="name" class="form-label">Name</label>
+            <div class="input-wrapper">
+              <input type="text" name="name" id="name" required placeholder="e.g Juan Dela Cruz" class="input-field" autocomplete="name">
+              <ion-icon name="person-circle"></ion-icon>
+            </div>
+          </div>
+        
+          <div class="form-wrapper">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" required placeholder="e.g juandelacruz@mail.com" class="input-field" autocomplete="email">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+          </div>
+        
+          <div class="form-wrapper">
+            <label for="phone" class="form-label">Phone</label>
+            <div class="input-wrapper">
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field" autocomplete="tel">
+              <ion-icon name="call"></ion-icon>
+            </div>
+          </div>
+        
+          <div class="form-wrapper">
+            <label for="message" class="form-label">Message</label>
+            <div class="input-wrapper">
+              <textarea name="message" id="message" required placeholder="Write a message for my work..." class="input-field" autocomplete="off"></textarea>
+              <ion-icon name="chatbubbles"></ion-icon>
+            </div>
+          </div>
+        
+          <button type="button" class="custom-button" onclick="showPopup()">
+            <span class="button_lg">
+              <span class="button_sl"></span>
+              <span class="button_text">SEND</span>
+            </span>
+          </button>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+        </form>
+             
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+      <p class="h1 logo">
+        <a href="#" class="custom-link">
+          Shenmar Bonifacio Portfolio<span>.</span>
+        </a>
+      </p>
+      <p class="copyright">
+        &copy; BSCS 3C <a href="#">Shen</a>. All rights reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+
+  <script src="./assets/js/script.js"></script>
+  
+  <!-- 
+    - ionicon link
+  -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>

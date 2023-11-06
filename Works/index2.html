@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHEN'S WEB APP | WORKS</title>
+
+  <!--
+    - favicon
+  -->
+
+  <link rel="shortcut icon" href="assets/images/Omni.gif" type="Omni">
+
+  <!--
+    - custom css link
+  -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="assets/images/Shen2.jpg" alt="Shenmar Bonifacio" width="80" id="avatarImage">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Shenmar Bonifacio">Shenmar Bonifacio</h1>
+          <p class="title">GAMER | PROGRAMMER | ARTIST</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Favorites</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="weather-widget">
+            <div class="weather-icon">
+              <img src="" alt="Weather Icon">
+            </div>
+            <div class="weather-info">
+              <h2 class="location"></h2>
+              <p class="temperature"></p>
+              <p class="description"></p>
+            </div>
+          </li>
+        
+          <li class="contact-item">
+            <div class="icon-box">
+              <div style="font-size: 35px; line-height: 35px;">⏰</div>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">PHILIPPINES STANDARD TIME (GMT +8)</p>
+              <p id="digital-clock" class="contact-link">00:00:00</p>
+            </div>
+          </li>
+        
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="../assets/images/hitman.jpg" alt="Favorite Anime" style="width: 38px; height: 38px;">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">FAVORITE ANIME</p>
+              <a href="https://reborn.fandom.com/wiki/Katekyo_Hitman_Reborn!" class="contact-link">Hitman Reborn!</a>
+            </div>
+          </li>
+          
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="../assets/images/yorick.jpg" alt="Favorite Game" style="width: 38px; height: 38px;">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">FAVORITE GAME</p>
+              <a href="https://www.leagueoflegends.com/en-ph/" class="contact-link">League Of Legends</a>
+            </div>
+          </li>
+          
+          <li class="info-content"> 
+            <p class="title">© Shen. All rights Reserved.</p>
+          </li>
+        </ul>
+        
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.facebook.com/Sheeeeeeeeeenn" class="social-link" title="Facebook Profile">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+        
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/shenmar-bonifacio-10660b1ba/" class="social-link" title="linkedin">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        
+          <li class="social-item">
+            <a href="https://github.com/sheeeeeeeeeenn" class="social-link" title="github">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        
+          <li class="social-item">
+            <a href="https://www.instagram.com/potatooosmashhh/" class="social-link" title="instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+    
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="../index.html" class="navbar-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Timeline</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Applications</button>
+          </li>
+
+        </ul>
+
+      </nav>
+      
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About my works</h2>
+        </header>
+
+        <section class="about-text" style="text-align: justify; text-indent: 20px;">
+          <p>
+            I made this Web Application so I can compile and exhibit all my projects since I was in 1st year college 
+            up until today. It contains all the works I created and tried.
+          </p>
+          <p>
+            Now, I've managed to organize it into categories.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Skills</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="assets/images/Gamer.png"
+                 alt="Gamer" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">GAMER</h4>
+                <p class="service-item-text" style="text-align: justify; text-indent: 20px;">
+                  I'm a proactive hobbyist who plays interactive games, 
+                  especially video games, tabletop role-playing games, 
+                  and skill-based card games, and who plays for usually long periods of time.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="assets/images/WebDev.png" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programmer</h4>
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="assets/images/Drawing.png" alt="Digital Artist" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Digital Artist</h4>
+                <p class="service-item-text" style="text-align: justify; text-indent: 20px;">
+                  Specialized computer software to produce graphic elements for games, videos, and websites.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="assets/images/VideoEditor.png" alt="Editor" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Editor</h4>
+                <p class="service-item-text" style="text-align: justify; text-indent: 20px;">
+                  I am skilled in the field of photo and video editing 
+                  with extensive experience in  enhancing content to quality results.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!--
+          - FEEDBACKS
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">FEEDBACKS</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Saron" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Christian</h4>
+                <div class="testimonials-text" style="text-align: justify; text-indent: 20px;" data-testimonials-text >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                     sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Lavina faith" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Lavina Faith</h4>
+                <div class="testimonials-text" style="text-align: justify; text-indent: 20px;" data-testimonials-text>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                     sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Jisoo" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jisoo</h4>
+                <div class="testimonials-text" style="text-align: justify; text-indent: 20px;" data-testimonials-text>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                     sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="JM" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>JM</h4>
+                <div class="testimonials-text" style="text-align: justify; text-indent: 20px;" data-testimonials-text>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                     sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!--
+          - FEEDBACKS TESTIMONIALS
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn title="Shen">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Shenmar" width="80" data-modal-img>
+              </figure>
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Shenmar</h4>
+              <time datetime="2021-06-14">14 June, 2021</time>
+              <div data-modal-text style="text-align: justify; text-indent: 20px;">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                     sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <!--
+        - #Timeline
+      -->
+
+      <article class="Timeline" data-page="timeline">
+
+        <header>
+          <h2 class="h2 article-title">Timeline</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="School"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">St. Clare College of Caloocan (Scholar)</h4>
+              <span>2021 - Present</span>
+              <p class="timeline-text">
+                Bachelor of Science in Computer Science
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Metro Manila College</h4>
+              <span>2019 - 2021</span>
+              <p class="timeline-text">
+                Science, Technology, Engineering and Mathematics (STEM)
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bagumbong High School</h4>
+              <span>2015 - 2019</span>
+              <p class="timeline-text">
+                Junior High School
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Social Media Committee</h4>
+              <span>2021 - Present</span>
+              <p class="timeline-text">
+                Appointed live streamer for church masses and proficient in crafting 
+                graphic designs for posters, tarpaulins, and tickets during events.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Academic Commissions</h4>
+              <span>2019 - Present</span>
+              <p class="timeline-text">
+                Self - Employed
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Digital Artist</h4>
+              <span>2019 - 2021</span>
+              <p class="timeline-text">
+                Self - Employed
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <i class="fas fa-desktop fa-2x fa-inverse"></i> 
+                <h5 class="h5">Web design</h5>
+                <div class="data-box">
+                  <data value="90">90%</data>
+                </div>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+          
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <i class="fas fa-paint-brush fa-2x fa-inverse"></i> 
+                <h5 class="h5">Digital Arts</h5>
+                <div class="data-box">
+                  <data value="100">100%</data>
+                </div>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+            </li>
+          
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <i class="fas fa-gamepad fa-2x fa-inverse"></i> 
+                <h5 class="h5">Gaming</h5>
+                <div class="data-box">
+                  <data value="100">100%</data>
+                </div>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+            </li>
+          
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <i class="fas fa-edit fa-2x fa-inverse"></i> 
+                <h5 class="h5">Editing</h5>
+                <div class="data-box">
+                  <data value="70">70%</data>
+                </div>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+          </ul>
+          
+
+        </section>
+
+      </article>
+
+      <!--
+        - #Digital Works
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Digital Art</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Webhost</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Church Design</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Digital Art</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Webhost</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Church Design</button>
+              </li>
+            </ul>
+          </div>
+          
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="digital art">
+              <a href="assets/images/DA1.jpg" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/DA1.jpg" alt="DA1" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vector 1</h3>
+                <p class="project-category">Digital Arts</p>
+              </a>
+            </li>
+            
+
+            <li class="project-item  active" data-filter-item data-category="digital art">
+              <a href="assets/images/DA3.jpg" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/DA3.jpg" alt="DA3" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vector 2</h3>
+                <p class="project-category">Digital Arts</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="digital art">
+              <a href="assets/images/DA5.jpg" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/DA5.jpg" alt="DA5" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vector 3</h3>
+                <p class="project-category">Digital Arts</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="digital art">
+              <a href="assets/images/DA9.jpg" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/DA9.jpg" alt="DA9" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vector 4</h3>
+                <p class="project-category">Digital Arts</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="digital art">
+              <a href="assets/images/DA6.jpg" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/DA6.jpg" alt="DA6" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vector 5</h3>
+                <p class="project-category">Digital Arts </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="digital art">
+              <a href="assets/images/DA7.jpg" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/DA7.jpg" alt="DA7" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vector 6</h3>
+                <p class="project-category">Digital Arts</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="digital art">
+              <a href="assets/images/DA4.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/DA4.png" alt="DA4" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vector 7</h3>
+                <p class="project-category">Digital Arts</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="digital art">
+              <a href="assets/images/DA10.jpg" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/DA10.jpg" alt="DA10" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vector 8</h3>
+                <p class="project-category">Digital Arts</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="digital art">
+              <a href="assets/images/DA8.jpg" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/DA8.jpg" alt="DA8" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vector 9</h3>
+                <p class="project-category">Digital Arts</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="webhost">
+              <a href="https://bonifacio-shenmar.000webhostapp.com/join.php?fbclid=IwAR1UmuPAU22_81mRUP5GjLXtWuWzSm5b4JhBiiiwJVXY7QfymT-uYmZyKDA" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/Webhost.png" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Database</h3>
+                <p class="project-category">Webhost</p>
+              </a>
+            </li>     
+
+            <li class="project-item  active" data-filter-item data-category="church design">
+              <a href="assets/images/S1.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/S1.png" alt="S1" loading="lazy">
+                </figure>
+                <h3 class="project-title">Design 1</h3>
+                <p class="project-category">Church Design</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="church design">
+              <a href="assets/images/S2.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/S2.png" alt="S2" loading="lazy">
+                </figure>
+                <h3 class="project-title">Design 2</h3>
+                <p class="project-category">Church Design</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="church design">
+              <a href="assets/images/S4.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/S4.png" alt="S4" loading="lazy">
+                </figure>
+                <h3 class="project-title">Design 3</h3>
+                <p class="project-category">Church Design</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="church design">
+              <a href="assets/images/S5.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/S5.png" alt="S5" loading="lazy">
+                </figure>
+                <h3 class="project-title">Design 4</h3>
+                <p class="project-category">Church Design</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="church design">
+              <a href="assets/images/S6.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/S6.png" alt="S6" loading="lazy">
+                </figure>
+                <h3 class="project-title">Design 5</h3>
+                <p class="project-category">Church Design</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="church design">
+              <a href="assets/images/S7.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/S7.png" alt="S7" loading="lazy">
+                </figure>
+                <h3 class="project-title">Design 6</h3>
+                <p class="project-category">Church Design</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="church design">
+              <a href="assets/images/S8.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/S8.png" alt="S8" loading="lazy">
+                </figure>
+                <h3 class="project-title">Design 7</h3>
+                <p class="project-category">Church Design</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="church design">
+              <a href="assets/images/S9.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/S9.png" alt="S9" loading="lazy">
+                </figure>
+                <h3 class="project-title">Design 8</h3>
+                <p class="project-category">Church Design</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="church design">
+              <a href="assets/images/S10.png" target="_blank" onclick="return !window.open(this.href)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets/images/S10.png" alt="S10" loading="lazy">
+                </figure>
+                <h3 class="project-title">Design 9</h3>
+                <p class="project-category">Church Design</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    
+      <!--
+        - #Applications
+      -->
+
+      <article class="applications" data-page="applications">
+
+        <header>
+          <h2 class="h2 article-title">Applications</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="Rubik's Cube Game By ShenPogi/index.html">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Rubiks-Cube.jpg" alt="Rubiks-Cube Game" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Game · 3D · Solving</p>
+                    <span class="dot"></span>
+                    <time datetime="2022">2022 · Desktop</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">A 3D Rubiks-Cube Game!</h3>
+                  <p class="blog-text">
+                   Simple game, easy to navigate enjoy!
+                  </p>
+                </div>
+              </a>
+            </li>
+            
+            <li class="blog-post-item">
+              <a href="Typing Test By ShenPogi/index.html">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Typing Test.jpg" alt="WPM Test" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Typing · Speed  </p>
+                    <span class="dot"></span>
+                    <time datetime="2022">2022 · Desktop · Mobile</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Word Per Minute Game</h3>
+                  <p class="blog-text">
+                    Number of words processed per minute, most commonly used to measure 
+                    and denote the speed of typing or reading speed. 
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="2048 Game by ShenPogi/index.html">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/2048.png" alt="2048 Game" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Math · Numbers · Interactive · Single-Player</p>
+                    <span class="dot"></span>
+                    <time datetime="2022">2022 · Desktop · Mobile</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">2048</h3>
+                  <p class="blog-text">
+                    Single-player sliding block puzzle game.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="Memory Cards Game By ShenPogi/index.html">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Memory Test.png" alt="Memory Test game" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Test · Interactive · Learning</p>
+                    <span class="dot"></span>
+                    <time datetime="2023">2023 · Desktop · Mobile</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Memory Test</h3>
+                  <p class="blog-text">
+                    Test your short term memory skills with this free memory game.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="Speech Text Reader By ShenPogi/index.html">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Speech Text Reader.jpg" alt="Speech Text Reader App" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Interactive · Text Reader</p>
+                    <span class="dot"></span>
+                    <time datetime="2022">2022 · Desktop</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Speech Text Reader App</h3>
+                  <p class="blog-text">
+                    A technology that converts text into spoken audio. It can read aloud PDFs, websites, and books using natural AI voices.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="Drawing App By ShenPogi/index.html">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Drawing App.jpg" alt="Drawing App" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Interactive · Design · Sketch </p>
+                    <span class="dot"></span>
+                    <time datetime="2023">2023 · Desktop · Mobile</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Drawing App</h3>
+                  <p class="blog-text">
+                    Help you create simple images called vector graphics.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="Exchange Rate Calculator By ShenPogi/index.html">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Exchange Rate.jpg" alt="Exchange Rate" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Money · Exchange · Real Time</p>
+                    <span class="dot"></span>
+                    <time datetime="2023">2023 · Desktop · Mobile</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Exchange Rate App</h3>
+                  <p class="blog-text">
+                    Rate at which one currency will be exchanged for another currency.
+                  </p>
+                </div>
+              </a>
+            </li> 
+
+            <li class="blog-post-item">
+              <a href="Insect Catch Game by ShenPogi/index.html">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/Catching Insects.jpg" alt="Catching Insects" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Game · Insects · Catching </p>
+                    <span class="dot"></span>
+                    <time datetime="2023">2023 · Desktop</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Catching Insects Game</h3>
+                  <p class="blog-text">
+                    All you have to do is catch the insect on the screen.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="">
+                <figure class="blog-banner-box">
+                  <img src="assets/images/WIP.png" alt="Work in Progress" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Website Application</p>
+                    <span class="dot"></span>
+                    <time datetime="2023">2023 · All platforms</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Work in Progress...</h3>
+                  <p class="blog-text">
+                    My latest and newest Website Application
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+  <!--
+    - custom js link
+  -->
+
+  <script src="assets/js/script.js"></script>
+
+  
+  <!--
+    - ionicon link
+  -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

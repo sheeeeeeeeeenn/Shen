@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #aaf3c8;
+  color: #570303;
+  font-family: "Press Start 2P", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #000000;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
+.btn {
+  border: 0;
+  background-color: #88ecf3;
+  color: #360000;
+  padding: 15px 20px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.insects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.insects-list li {
+  margin: 10px;
+}
+
+.choose-insect-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  width: 150px;
+  height: 150px;
+}
+
+.choose-insect-btn:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.choose-insect-btn:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choose-insect-btn img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.game-container {
+  position: relative;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.message {
+  line-height: 1.7;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+
+.message.visible {
+  transform: translate(-50%, 150%);
+  opacity: 1;
+}
+
+.insect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.insect img {
+  width: 100px;
+  height: 100px;
+}
+
+.insect.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+#home-link {
+  position: absolute;
+  left: 20px; /* Adjust this value to center it horizontally */
+  top: 10px; /* Adjust this value to position it vertically */
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#home-link a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+button:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all .5s ease;
+  transition-delay: 300ms;
+}
+
+button:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
